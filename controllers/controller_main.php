@@ -1,14 +1,14 @@
 <?php
 
-//require_once 'models/model_main.php';
+
 
 class ControllerMain {
     
     private const MODEL_NAME_PREFIX = 'model_';
     private const VIEW_NAME_PREFIX = 'view_';
-    
+
     public function __construct() {
-        $this->Route = $uri;
+        
     }
     
     public function getModelName($uri): string {
@@ -32,7 +32,6 @@ class ControllerMain {
                 require_once($viewFile);
         }
     }
-    
 }
 
 echo ' controller ';

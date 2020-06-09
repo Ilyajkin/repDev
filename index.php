@@ -6,7 +6,7 @@ require_once 'core/Route.php';
 $router = new Router();
 $route = $router->getRoute();
 
-$controllerName = $route->requireController();
-
+$controllerName = $route->getControllerName();
 
 echo $controllerName;
+var_dump($uri);
