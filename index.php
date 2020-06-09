@@ -6,8 +6,7 @@ require_once 'core/Route.php';
 $router = new Router();
 $route = $router->getRoute();
 
-$controllerName = $route->getControllerName();
-$modelName = $route->getModelName();
+$controllerName = $route->requireController();
 
-echo $controllerName . PHP_EOL;
-echo $modelName . PHP_EOL;
+
+echo $controllerName;
